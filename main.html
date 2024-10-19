@@ -1,13 +1,64 @@
 <!DOCTYPE html>
 
 <html>
-
 <head>
 	<link rel="stylesheet" href="styles.css">
 </head>
+	<style>
+		label,input {
+			margin:10px;
+			padding:2px;
+			
+		}
+	</style>
 
 <body>
-	<!-- the entire body must be written by student -->
+	<form method="post">
+		
+         <label for="name">Name:</label>
+		<input type="Text" id="name" placeholder="Name" required>
+		<br>
+         <label for="email">Email:</label>
+		 <input type="Email" id="email" placeholder="Email" required>
+		<br>
+		<label for="gender_f">Gender:
+         <input type="Radio" id="gender_f" name="gender" value="gender" required>Female
+        </label>
+
+        <label for="gender_m">
+            <input type="Radio" id="gender_m" name="gender" value="gender" required>Male
+           </label>
+			<br>
+		
+			<label for="cars">Carbrands:</label>
+			<select id="cars" name="cars" placeholder="--please choose an option--" required>
+                <option value="">Maruthi</option>
+                <option value="">TATA</option>
+                <option value="">Ford</option>
+                <option value="">Hyuandai</option>
+            </select>
+		<br>
+    
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" placeholder="Age" required>
+        <br>
+        
+            <label for="dob">DOB:</label>
+            <input type="Date" id="dob" name="dob"  required>
+        <br>
+            <label for="tel">Phone number:</label>
+            <input type="Tel" id="tel" placeholder="xxx-xxx-xxxx">
+      <br>
+            <label for="password">Password:</label>
+            <input type="Password" id="password" placeholder="Password" required>
+        <br>
+            <label for="tos"></label>
+            <input type="Checkbox" id="tos" required>I agree to the TOS
+        <br>
+        <button type="submit">Submit</button>
+        
+
+	</form>
     <script type="text/javascript" src="./script.js">
 </script>
 
